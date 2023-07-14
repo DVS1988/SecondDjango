@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {% for alpha in alphas %}
+        <li style="display:inline">{{ alpha }}</li>
+    {% endfor %}
+
+
+    <h2>Список стран</h2>
+
+    <ol>
+        {% for country in countries %}
+            <li><a href='/name/{{country.country}}'>{{ country.country }}</a></li>
+        {% endfor %}
+    </ol>
+
+
+</body>
+</html>
