@@ -107,9 +107,9 @@ def get_alphabet(request, alpha):
     for item in list(dictionary_countries.keys()):
         if item == alpha:
             context = {
-                'val': list(dictionary_countries.values()),
+                'val': dictionary_countries[item],
             }
-        return render(request, 'alphabet-test.html', context)
+    return render(request, 'alphabet-test.html', context)
 
 
 ############
